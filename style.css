@@ -1,0 +1,21 @@
+/*
+Theme Name: Erişilebilir Tema
+Description: Klasik widget tabanlı, Bootstrap 5 menülü, ekran okuyucu uyumlu (WCAG 2.1 AA) erişilebilir tema.
+Version: 1.0.0
+Text Domain: erisilebilir
+License: GPL-2.0-or-later
+*/
+:root{--e-header-bg:#0d3b66;--e-header-text:#ffffff;--e-footer-bg:#212529;--e-footer-text:#ffffff}
+body{line-height:1.6}
+.site-header{background:var(--e-header-bg);color:var(--e-header-text)}
+.site-footer{background:var(--e-footer-bg);color:var(--e-footer-text)}
+.site-header a,.site-header .navbar-brand,.site-header .nav-link,.site-header .widget-title{color:var(--e-header-text)}
+.site-footer a,.site-footer .nav-link,.site-footer .widget-title{color:var(--e-footer-text)}
+.site-header a:hover,.site-footer a:hover{text-decoration:underline}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,.nav-link:focus-visible,.dropdown-item:focus-visible{outline:3px solid #ffbf47;outline-offset:2px;box-shadow:none}
+.navbar-toggler{border-color:currentColor;background:#fff}
+.dropdown-menu .dropdown-item{color:#212529}
+.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}
+.screen-reader-text:focus{background:#fff;clip:auto;clip-path:none;color:#000;display:block;height:auto;left:5px;top:5px;padding:12px 20px;width:auto;z-index:100000;position:absolute}
+.skip-link:focus{position:fixed}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
